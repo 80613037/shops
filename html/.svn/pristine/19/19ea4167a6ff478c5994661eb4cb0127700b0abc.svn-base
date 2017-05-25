@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>立即购买</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap">
+			<!--收货地址begin-->
+			<div class="line-bar box-bar" onclick="window.location.href='#'">
+				<div class="position-icon"></div>
+				<div class="position-inf">
+					<div class="per-inf">
+						<span class="name">收货人：于帅</span>
+						<span class="tel">13333333333</span>
+					</div>
+					<div class="dt-addr">
+						请填写收货地址请填写收货地址请填写收货地址请填写收货地址请填写收货地址
+					</div>
+				</div>
+				<div class="position-jt"></div>
+			</div>
+			<!--收货地址end-->
+			<!--订单信息begin-->
+			<div class="order-inf box-bar mar-bot">
+				<div class="item-pic cell" style="background-image: url(../images/sy_1banner_02.jpg);"></div>
+				<div class="item-con box-bar box-bar-col">
+					<p class="">水果 山东烟台苹果水果 新鲜栖霞红富士苹果脆甜5斤 大果包邮</p>
+					<div class="dt-bdnum buy-bdnum">
+		                <span class="reduce">-</span>
+		                <input class="count-input" type="text" value="1"/>
+		                <span class="add">+</span>
+		           	</div>
+				</div>
+				<div class="item-pay cell">
+					<div class="price">￥1020.9</div>
+					<div class="quantity">x1</div>
+				</div>
+			</div>
+			<!--订单信息end-->
+			<div class="single-row box-bar pad10">
+				<div class="tit">金币</div>
+				<div class="box-bar-list"></div>
+				<div class="position-jt"></div>
+			</div>
+			<div class="single-row box-bar pad10 mar-bot">
+				<div class="tit">代金券</div>
+				<div class="box-bar-list"></div>
+				<div class="position-jt"></div>
+			</div>	
+			<div class="order-submit-wrap pad10">
+				<div class="sub-price">总价：<span class="price">￥1020.9</span></div>
+				<a class="pay-btn wx-pay" href="#">微信支付</a>
+				<a class="pay-btn ye-pay" href="#">余额支付</a>
+			</div>
+		</div>
+		<!--主体部分end-->
+		<!--弹窗-->
+		<div class="tc-bd">
+			<div class="tc-bd-inner">
+				<h3>提示</h3>
+				<p>是否支付该订单？</p>
+				<div class="wrap-btn box-bar">
+					<a class="quxiao-btn box-bar-list">取消</a>
+					<a class="sure-btn box-bar-list">确定</a>
+				</div>
+			</div>
+		</div>			
+	</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>

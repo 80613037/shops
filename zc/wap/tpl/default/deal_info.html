@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>商品详情</title>
+	<!--字体图标-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/iconfont/iconfont.css">
+	<!--公共样式-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/NormalizeFile.css">
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/public.css">
+	<!--自定义样式-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/style.css">
+	<!--jquery库有此轮播的需要引用低版本的库-->
+	<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/jquery-3.1.0.js"></script>
+	<!--rem自适应-->
+	<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/flexible.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<!--主体部分begin-->
+<div class="wrap pad-bot">
+	<div class="seedt-tit">
+		<div class="tit">{$deal_info.name}</div>
+		<div class="time">{$deal_info.begin_date}-{$deal_info.end_date}</div>
+	</div>
+	<div class="out-seedt-shopinf mar-bot">
+		<div class="seedt-shopinf box-bar">
+			<div class="cell">
+				<span class="seedt-shopic" style="background-image:url({$deal_info.site_logo})"></span>
+			</div>
+			<div class="box-bar-list">
+				{$deal_info.shopName}
+			</div>
+		</div>
+	</div>
+	<div class="seedt-img">
+		{$deal_info.description}
+	</div>
+</div>
+<!--主体部分end-->
+<!--固定的底部begin-->
+<footer class="footer">
+	<div class="detail-footer">
+		<div class="share foot-block1">
+			<i class="iconfont">&#xe605;</i>
+			<p>分享</p>
+		</div>
+		<div class="buynow supp foot-block1" onclick="layer.msg('请返回选择相应的回报支持！');">我要支持</div>
+	</div>
+</footer>
+<!--固定的底部end-->
+</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/custom-index.js"></script>
+<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/layer1.js"></script>
+</html>

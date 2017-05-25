@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>个人资料</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<link rel="stylesheet" href="../styles/coment.css">
+		<link rel="stylesheet" href="../styles/wode.css">
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+	</head>
+	<body>
+		<div class="wode">
+			<div class="person-zl">
+				<ul>
+					<li class="litx-dd box-bar">
+						<span class="tx-txt box-bar-list tex-l">头像</span>
+						<div class="per-upimg p-data cell" >
+							<div class="nc-img1" id="preview"><img src="../images/wode/wd_1tx.png" alt=""></div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />
+						</div>
+					</li>
+					<li class="litx-dd1">
+						<span class="tx-txt">昵称</span>
+						<span class="nc-img"><input type="text" placeholder="小沫"></span>
+					</li>
+					<li class="litx-dd1">
+						<span class="tx-txt">手机号码</span>
+						<span class="nc-img"><input type="text" placeholder="13366662222"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="bc-btn">
+				<a href="">保 存</a>
+			</div>
+		</div>
+
+	</body>
+<!--头像上传-->
+<script src="../scripts/upimg.js"></script>	
+</html>

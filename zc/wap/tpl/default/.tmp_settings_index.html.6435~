@@ -1,0 +1,123 @@
+{include file="inc/header.html"}
+
+<!--中间部分-->  
+<div class="user_center">
+    <section class="u_top">
+        <img src="{$TMPL}/images/mybackground.png" width="100%" style=" position:absolute; top:0px;">
+        <div class="this_details">
+            <div class="user_pic">
+                <img src="{function name="get_user_avatar" uid=$user_info.id type="middle"}" width="100%">
+            </div>
+            <div class="user_info">
+                <h3>{$user_info.user_name}</h3>
+                <p>
+                    <i class="fa fa-map-marker"></i>
+                    <span>会员</span>
+					{if $user_info.user_level}
+                    <span>{$level_name}</span>
+					{/if}
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="u_details">
+        <!--遍历ul列表就可以了-->
+        <ul>
+            <li>
+                <div class="project_ico" style=" background:#47aef0;"><i class="fa fa-list-alt"></i></div>
+                <div class="specific_items">
+                    <h5>账户余额</h5>
+                    <b>{$user_info.money}</b>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        </ul>
+        <!---------------->
+        <ul>
+            <li onclick="window.location.href='{url_wap r="account#index"}'">
+                <div class="project_ico" style=" background:#6bceb5;"><i class="fa fa-check-circle"></i></div>
+                <div class="specific_items">
+                    <h5>支持的项目</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li onclick="window.location.href='{url_wap r="account#project"}'">
+                <div class="project_ico" style=" background:#79cbe8;"><i class="fa fa-tags"></i></div>
+                <div class="specific_items">
+                    <h5>我的项目</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li onclick="window.location.href='{url_wap r="account#focus"}'">
+                <div class="project_ico" style=" background:#c2b2ea;"><i class="fa fa-heart"></i></div>
+                <div class="specific_items">
+                    <h5>关注的项目</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+			<li onclick="window.location.href='{url_wap r="account#credit"}'">
+                <div class="project_ico" style=" background:#c2b2ea;"><i class="fa fa-calculator"></i></div>
+                <div class="specific_items">
+                    <h5>收支明细</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+			<li onclick="window.location.href='{url_wap r="account#record"}'">
+                <div class="project_ico" style=" background:#c2b2ea;"><i class="fa fa-file-text-o"></i></div>
+                <div class="specific_items">
+                    <h5>充值记录</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        </ul>
+        <!-------------->
+        <ul>
+            <li onclick="window.location.href='{url_wap r="settings#modify"}'">
+                <div class="project_ico" style=" background:#e9a4cb;"><i class="fa fa-pencil"></i></div>
+                <div class="specific_items">
+                    <h5>修改资料</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li onclick="window.location.href='{url_wap r="settings#password"}'">
+                <div class="project_ico" style=" background:#6c9bda;"><i class="fa fa-unlock-alt"></i></div>
+                <div class="specific_items">
+                    <h5>修改密码</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li  onclick="window.location.href='{url_wap r="settings#bind"}'" style="display:none;">
+                <div class="project_ico" style=" background:#a894da;"><i class="fa fa-link"></i></div>
+                <div class="specific_items">
+                    <h5>绑定设置</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+            <li  onclick="window.location.href='{url_wap r="settings#consignee"}'">
+                <div class="project_ico" style=" background:#fed97f;"><i class="fa fa-map-marker"></i></div>
+                <div class="specific_items">
+                    <h5>收货地址管理</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+			<li  onclick="window.location.href='{url_wap r="settings#bank"}'">
+                <div class="project_ico" style=" background:#fed97f;"><i class="fa fa-credit-card"></i></div>
+                <div class="specific_items">
+                    <h5>银行账户</h5>
+                </div>
+                <a href="#" class="go_see"><i class="fa fa-chevron-right"></i></a>
+            </li>
+        </ul>
+        <ul>
+            <li onclick="window.location.href='{url_wap r="user#loginout"}'">
+                <div class="project_ico" style=" background:#47aef0;"><i class="fa fa-minus-circle"></i></div>
+                <div class="specific_items">
+                    <h5>退出</h5>
+                 </div>
+             </li>
+        </ul>
+    </section>	
+</div>
+
+
+{include file="inc/footer.html"}

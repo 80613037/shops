@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>我的代金券</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/swiper.min.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<link rel="stylesheet" href="../styles/wode.css">
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>
+		<script src="../scripts/swiper.min.js"></script>
+		<script src="../scripts/idangerous.swiper.min.js"></script>
+		
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+	</head>
+	<body>
+		<div class="wode">
+			<header class="favor-header-bar">
+		        <ul class="tabs">
+		            <li class="default"><a href="javascript:void(0);" id="btn1" hidefocus="true">未使用</a></li>
+		            <li><a href="javascript:void(0);" id="btn2" hidefocus="true">已使用/已过期</a></li>
+		        </ul>
+    		</header>
+    		<div class="swiper-container favor-list">
+		       	 <div class="swiper-wrapper">
+		       	 <!-- 第一部分 -->
+		            <div class="swiper-slide">
+		           		<div class="weisy">
+		           			<div class="wsy-left">
+		           				<img src="../images/wode/wd_44csbk.png" alt="">
+		           				<div class="pric-man">
+		           					<p class="jine">￥ 2</p>
+		           					<p class="man">满40可用</p>
+		           				</div>
+		           				
+		           			</div>
+		           			<div class="wsy-right">
+		           				<p class="xyhzc">新用户注册成功奖励券</p>
+		           				<p class="qcty">全场通用</p>
+		           				<p class="qcty">有效期至2016.09.20</p>
+		           			</div>
+		           		</div>
+		           		<div class="weisy">
+		           			<div class="wsy-left">
+		           				<img src="../images/wode/wd_44csbk.png" alt="">
+		           				<div class="pric-man">
+		           					<p class="jine">￥ 2</p>
+		           					<p class="man">满40可用</p>
+		           				</div>
+		           				
+		           			</div>
+		           			<div class="wsy-right">
+		           				<p class="xyhzc">新用户注册成功奖励券</p>
+		           				<p class="qcty">全场通用</p>
+		           				<p class="qcty">有效期至2016.09.20</p>
+		           			</div>
+		           		</div>
+		            </div>
+		            <div class="swiper-slide">
+		           		<div class="weisy">
+		           			<div class="wsy-left">
+		           				<img src="../images/wode/wd_44csbkh.png" alt="">
+		           				<div class="pric-man">
+		           					<p class="jine-hui">￥ 2</p>
+		           					<p class="man">满40可用</p>
+		           				</div>
+		           				
+		           			</div>
+		           			<div class="wsy-right">
+		           				<p class="xyhzc">新用户注册成功奖励券<span class="yigq"><img src="../images/wode/wd_45yjgq.png" alt=""></span></p>
+		           				<p class="qcty">全场通用</p>
+		           				<p class="qcty">有效期至2016.09.20</p>         				
+		           			</div>
+		           		</div>
+		           		<div class="weisy">
+		           			<div class="wsy-left">
+		           				<img src="../images/wode/wd_44csbkh.png" alt="">
+		           				<div class="pric-man">
+		           					<p class="jine-hui">￥ 2</p>
+		           					<p class="man">满40可用</p>
+		           				</div>
+		           				
+		           			</div>
+		           			<div class="wsy-right">
+		           				<p class="xyhzc">新用户注册成功奖励券<span class="yigq"><img src="../images/wode/wd_45yjsy.png" alt=""></span></p>
+		           				<p class="qcty">全场通用</p>
+		           				<p class="qcty">有效期至2016.09.20</p>         				
+		           			</div>
+		           		</div>
+		            </div>
+		        </div>
+   			</div>
+		</div>
+		
+		  <script>
+   			 var mySwiper = new Swiper('.swiper-container',{
+       	 autoHeight: true,
+       	 onSlideChangeStart: function(){
+          $(".tabs .default").removeClass('default');
+          $(".tabs li").eq(mySwiper.activeIndex).addClass('default');
+        }
+   	 });
+     $(".tabs li").on('click',function(e){
+        e.preventDefault();
+        $(".tabs .default").removeClass('default');
+        $(this).addClass('default');
+        mySwiper.swipeTo($(this).index());
+      });
+      $(".tabs li").click(function(e){
+        e.preventDefault();
+      });
+
+    </script>
+	</body>
+</html>

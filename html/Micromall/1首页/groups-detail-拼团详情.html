@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>商品详情</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<!--轮播-->
+		<link rel="stylesheet" href="../styles/trundle.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+		<!--需要放在头部，否则倒计时不执行-->
+		<script type="text/javascript" src="../scripts/custom-index.js"></script> 		
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot">
+			<!--轮播begin 建议上传图片最佳比例2:1-->
+			<div class="main_visual">
+				<div class="flicking_con">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+				</div>
+				<div class="main_image">
+					<ul>
+						<li><span class="img_1"><img src="../images/sy_1banner_02.jpg"></span></li>
+						<li><span class="img_2"><img src="../images/sy_1banner_02.jpg"></span></li>
+						<li><span class="img_3"><img src="../images/sy_1banner_02.jpg"></span></li>
+					</ul>
+					<a href="javascript:;" id="btn_prev"></a>
+					<a href="javascript:;" id="btn_next"></a>
+				</div>
+			</div>			
+			<!--轮播end-->	
+			<!--产品信息begin-->
+			<div class="detail-panel">
+				<div class="detail-tit">
+					<h3>水果 山东烟台苹果水果 新鲜栖霞红富士苹果脆甜5斤 大果包邮 </h3>
+					<span class="dt-icon">自营</span>
+				</div>
+				<div class="detail-price box-bar">
+					<div class="dt-price box-bar-list">￥20.9</div>
+					<div class="dt-num box-bar-list">商品数量：1000</div>
+				</div>
+			</div>
+			<div class="detail-add-cart cor">
+				支付开团并邀请<span class="cor">9</span>人参团，人数不足自动退款
+			</div>
+			<div class="detail-add-cart cor bgnone">
+				以下小伙伴正在发起团购，您可以直接参与
+			</div>	
+			<!--产品信息end-->
+			<!--去参团begin-->
+			<div class="goto-tour" onclick="window.location.href='#'">
+				<div class="tour-bar">
+					<ul class="box-bar">
+						<li class="img-part cell" style="background-image: url(../images/sy_1banner_02.jpg);">
+						</li>
+						<li class="join-inf box-bar-list">
+							<div class="tit fl">
+								快乐的小孩
+							</div>
+							<div class="inf fr">
+								<div class="inf-bar cor">还差8人成团</div>
+								<div class="inf-bar">
+									剩余				
+									<div class="time-item dis-inl">
+										<strong id="hour_show">0</strong>
+										<span>:</span>
+										<strong id="minute_show">0</strong>
+										<span>:</span>
+										<strong id="second_show">0</strong>
+									</div><!--倒计时模块-->  
+				                                                   结束
+								</div>
+							</div>
+						</li>
+						<li class="join-btn cell">
+							去参团
+						</li>
+					</ul>	
+				</div>
+			</div>
+			<!--去参团end-->
+			<!--去参团begin-->
+			<div class="goto-tour" onclick="window.location.href='#'">
+				<div class="tour-bar">
+					<ul class="box-bar">
+						<li class="img-part cell" style="background-image: url(../images/wd_1mrtx.png);">
+						</li>
+						<li class="join-inf box-bar-list">
+							<div class="tit fl">
+								快乐的小孩
+							</div>
+							<div class="inf fr">
+								<div class="inf-bar cor">还差8人成团</div>
+								<div class="inf-bar">剩余  23:50:09  结束</div>
+							</div>
+						</li>
+						<li class="join-btn cell">
+							去参团
+						</li>
+					</ul>	
+				</div>
+			</div>
+			<!--去参团end-->			
+			<!--商品详情和商品评价begin-->
+			<div class="detail-main mar-top">
+				<div class="dt-bdtab">
+					<div class="dt-bdtab-inf table-wrap on">
+						<img src="../images/sy_1banner_02.jpg" alt="">
+					</div>									
+				</div>				
+			</div>
+			<!--商品详情和商品评价end-->
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="toshop foot-block1">
+					<i class="iconfont">&#xe607;</i>
+					<p>进店逛逛</p>
+				</div>
+				<div class="share foot-block1">
+					<i class="iconfont">&#xe605;</i>
+					<p>分享</p>
+				</div>
+				<div class="buynow foot-block2">我要开团</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->
+	</body>
+<!--轮播begin-->
+<script type="text/javascript" src="../scripts/trundle.js"></script>
+<script type="text/javascript" src="../scripts/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.touchSlider.js"></script>
+<!--轮播end-->
+</html>

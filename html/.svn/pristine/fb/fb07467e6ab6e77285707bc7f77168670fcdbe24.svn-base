@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>我的团</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">	
+		<link rel="stylesheet" href="../styles/coment.css">	
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap">
+			<div class="my-regiment-hd tab-switch-hd mar-bot">
+				<ul>
+					<li class="on"><span>拼团中</span></li>
+					<li><span>已成团</span></li>
+					<li><span>拼团失败</span></li>				
+				</ul>
+			</div>	
+			<div class="tab-switch-bd on">
+				<!--订单信息begin-->
+				<div class="order-inf box-bar bor-b">
+					<div class="item-pic cell" style="background-image: url(../images/sy_1banner_02.jpg);"></div>
+					<div class="item-con box-bar box-bar-col">
+						<p class="">水果 山东烟台苹果水果 新鲜栖霞红富士苹果脆甜5斤 大果包邮</p>
+						<div class="dt-bdnum buy-bdnum">
+			                <span class="groupnum">10人团：</span>
+			                <span class="grouppri"><b>￥39.9</b>/件</span>
+			           	</div>
+					</div>
+				</div>
+				<!--订单信息end-->
+				<div class="finll-form-bar tex-r">
+					<div class="finll-form-bar my-regi-bar pad-lr">
+						<div class="order-btn hui fr">查看订单详情</div>					
+						<div class="order-btn lv fr">邀请好友拼团</div>						
+					</div>						
+				</div>
+			</div>
+			<div class="tab-switch-bd">
+				<!--订单信息begin-->
+				<div class="order-inf box-bar bor-b">
+					<div class="item-pic cell" style="background-image: url(../images/sy_1banner_02.jpg);"></div>
+					<div class="item-con box-bar box-bar-col">
+						<p class="">水果 山东烟台苹果水果 新鲜栖霞红富士苹果脆甜5斤 大果包邮</p>
+						<div class="dt-bdnum buy-bdnum">
+			                <span class="groupnum">10人团：</span>
+			                <span class="grouppri"><b>￥39.9</b>/件</span>
+			           	</div>
+					</div>
+				</div>
+				<!--订单信息end-->
+				<div class="finll-form-bar tex-r">
+					<div class="finll-form-bar my-regi-bar pad-lr">
+						<div class="order-btn hui fr">查看订单详情</div>					
+						<div class="order-btn hui fr">查看团详情</div>						
+					</div>						
+				</div>				
+			</div>
+			<div class="tab-switch-bd">3333</div>
+		</div>
+		<!--主体部分end-->			
+	</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>

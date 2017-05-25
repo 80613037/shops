@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>商品详情</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot">
+			<div class="seedt-tit">
+				<div class="tit">小滴云智能管家锁</div>
+				<div class="time">2016/08/08-2016/09/07</div>
+			</div>	
+			<div class="out-seedt-shopinf mar-bot">
+				<div class="seedt-shopinf box-bar">
+					<div class="cell">
+						<span class="seedt-shopic" style="background-image:url(../images/wd_40bg.jpg)"></span>
+					</div>
+					<div class="box-bar-list">
+						德式曼官方旗舰店
+					</div>
+				</div>				
+			</div>
+			<div class="seedt-img">
+				<img src="../images/wd_40bg.jpg">
+				<img src="../images/wd_40bg.jpg">
+			</div>
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="share foot-block1">
+					<i class="iconfont">&#xe605;</i>
+					<p>分享</p>
+				</div>
+				<div class="buynow supp foot-block1">我要支持</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->
+	</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>

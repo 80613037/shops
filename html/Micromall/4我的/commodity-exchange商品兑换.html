@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>商品兑换</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/coment.css">
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot">
+			<!--收货地址begin-->
+			<div class="line-bar box-bar" onclick="window.location.href='#'">
+				<div class="position-icon"></div>
+				<div class="position-inf">
+					<div class="per-inf">
+						<span class="name">收货人：于帅</span>
+						<span class="tel">13333333333</span>
+					</div>
+					<div class="dt-addr">
+						请填写收货地址请填写收货地址请填写收货地址请填写收货地址请填写收货地址
+					</div>
+				</div>
+				<div class="position-jt"></div>
+			</div>
+			<!--收货地址end-->
+			<!--订单信息begin-->
+			<div class="order-inf box-bar bor-b">
+				<div class="item-pic cell" style="background-image: url(../images/sy_1banner_02.jpg);"></div>
+				<div class="item-con box-bar-col">
+					<p class="">水果 山东烟台苹果水果 新鲜栖霞红富士苹果脆甜5斤 大果包邮</p>
+					<div class="img-price jifen-bar box-bar-col mar-top">
+						<span class="discount-price integral-num cor">80</span>
+					</div>					
+				</div>
+			</div>
+			<!--订单信息end-->
+			<div class="single-row box-bar pad10">
+				<div class="cell shul-zi">数量</div>
+				<div class="box-bar-list shul-opra">
+					<div class="dt-bdnum buy-bdnum fr">
+		                <span class="reduce">-</span>
+		                <input class="count-input" type="text" value="1"/>
+		                <span class="add">+</span>
+		           	</div>					
+				</div>
+			</div>
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="share foot-block3 eject-btn">
+					<p class="duihuan-inf">积分共计使用：<span class="cor">160</span></p>
+				</div>
+				<div class="buynow foot-block1 corbai" onclick="funcdh()">立即兑换</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->	
+	</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>

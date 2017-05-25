@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+    <link href="../styles/product_list.css" rel="stylesheet" />
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.11.2.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+<title>购物车</title>
+</head>
+<body> 
+    	<!--主体部分begin-->
+		<div class="wrap pad-bot">	
+            <a href="javascript:void(0)" class="product_list_adress">
+                <img src="../images/sy_2xsms_10dztb.png" class="sign"/>
+                <div class="content">
+                    <div class="title"><span>离散离</span><span>15826526565</span></div>
+                    <div class="address">河北省石家庄市新华区天山法界与中山路交叉口御景花园13号楼2092市</div>
+                </div>
+                <div class="jiao"></div>
+            </a>
+            <div class="all_product">
+                <div class="product_list_fx">
+                        <a href="javascript:void(0)" class="image">
+                            <img src="../images/gwc_1sptp.png" />
+                        </a>
+                        <a href="javascript:void(0)" class="title">
+                            水果 山东烟台苹果水果 新鲜西夏红富士脆甜5斤 大果包邮
+                        </a>
+                        <div class="price">
+                            <span>￥1235.9</span>
+                            <small>×1</small>
+                        </div>
+                    </div>
+                    <div class="product_list_fx">
+                        <a href="javascript:void(0)" class="image">
+                            <img src="../images/gwc_1sptp.png" />
+                        </a>
+                        <a href="javascript:void(0)" class="title">
+                            水果 山东烟台苹果水果 新鲜西夏红富士脆甜5斤 大果包邮
+                        </a>
+                        <div class="price">
+                            <span>￥1235.9</span>
+                            <small>×1</small>
+                        </div>
+                    </div>
+            </div>
+            
+            <div class="product_tickets">
+                <a href="javascript:void(0)">金币<small>已抵用￥3.50</small><div class="jiao"></div></a>
+                <a href="javascript:void(0)">代金券<small>已抵用￥3.50</small><div class="jiao"></div></a>
+            </div>
+            <div class="product_all">
+                <div class="price">
+                    总价：<span>￥1000.09</span><small>(含运费：￥6.00)</small>
+                </div>
+                    <input type="button" value="微信支付" class="weixin"/>
+                    <input type="button" value="余额支付" class="yue"/>
+            </div>
+		</div>
+		<!--主体部分end-->
+
+</body>
+</html>

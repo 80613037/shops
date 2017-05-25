@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>众筹</title>
+	<!--字体图标-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/iconfont/iconfont.css">
+	<!--公共样式-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/NormalizeFile.css">
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/public.css">
+	<!--自定义样式-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/style.css">
+	<!--上拉加载更多-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/scrollbar.css">
+	<!--jquery库有此轮播的需要引用低版本的库-->
+	<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/jquery-3.1.0.js"></script>
+	<!--rem自适应-->
+	<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/flexible.js"></script>
+	<!--上拉加载更多-->
+	<script type="text/javascript" src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/iscroll.js"></script>
+	<script type="text/javascript" src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/iscrollfresh-pt.js"></script>
+</head>
+<body>
+<!--主体部分begin-->
+	<div class="wrap" id="wrapper">
+		<div id="scroller">
+			<div id="pullDown">
+				<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+			</div>
+			<div id="thelist">
+				<!--众筹商品展示begin-->
+				<div class="pro-wrap shop-pro-wrap on">
+					<!--商品循环部分(建议图片200*190)begin-->
+					{foreach from=$deal_list item=deal key=k}
+					<div class="pro-list"><a href="{url_wap r="deal" p="id=$deal.id"}">
+						<div class="pro-img-pannel table-wrap">
+							<img src="{if $deal.image == ''}{$ROOT_URL}/Upload/default.gif{else}{$deal.image}{/if}" width="200" height="190">
+						</div>
+						<div class="img-title-bar">
+							{$deal.name}
+						</div>
+						<div class="img-title-bar">
+							<div class="ui-progressbar">
+								<div class="ui-progressbar-value" style="width:{if $deal.percent > 100}100{else}{$deal.percent}{/if}%;">
+								</div>
+							</div>
+						</div>
+						<div class="img-price crowd-img-price">
+							<span class="price-tit">已筹：</span>
+							<span class="price-num">￥{function name="round" v=$deal.support_amount e=2}</span>
+							<span class="group-num">{$deal.percent}%</span>
+						</div></a>
+					</div>
+					{/foreach}
+					<!--商品循环部分end-->
+
+				</div>
+			</div>
+			<div id="pullUp">
+				<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+			</div>
+		</div>
+	</div>
+	<!--主体部分end-->
+</body>
+</html>
+
+
+
+
+

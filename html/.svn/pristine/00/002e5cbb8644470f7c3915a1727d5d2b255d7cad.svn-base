@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>意见反馈</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/coment.css">
+		<!--jquery库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+	</head>
+
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap">			
+			<div class="com-wrap">
+				<div class="text-wrap">
+					<textarea id="content" placeholder="请写下您宝贵的意见！"></textarea>
+					<div class="count-bar corh"><span id="sid"></span>/1000</div>
+				</div>				
+				<div class="submit-bar">
+					<button type="submit" class="submit-btn sel">提交</button>
+				</div>				
+			</div>	
+		</div>
+		<!--主体部分end-->
+	</body>
+	<!--登陆模块所用js-->
+	<script src="../scripts/InputLetter.js"></script>
+</html>

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>限时秒杀</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<!--时间轴-->
+		<link rel="stylesheet" href="../styles/seckill.css">
+		<!--上拉加载更多-->
+		<link rel="stylesheet" href="../styles/scrollbar.css">
+		<!--jquery库无此轮播可以引用高版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+		<!--需要放在头部，否则倒计时不执行-->
+		<script type="text/javascript" src="../scripts/custom-index.js"></script> 	
+		<!--上拉加载更多-->
+		<script type="text/javascript" src="../scripts/iscroll.js"></script> 
+		<script type="text/javascript" src="../scripts/iscrollfresh-ms.js"></script> 
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap" id="wrapper">
+			<div id="scroller">	
+				<div id="pullDown">
+					<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+				</div>
+					<div id="thelist">
+					<!--广告位 建议上传图片（750*370）begin-->
+					<div class="ad-seckill table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>			
+					<!--广告位 建议上传图片（750*370）end-->					
+					<!-- 时间轴Swiper begin-->
+					<div class="timeaxis_warp">
+						  <div class="swiper-container" id="swiper-container3">	
+							   <div class="swiper-wrapper">
+								    <div class="swiper-slide">
+									      <div class="timeaxis-item-inner">
+										     <div class="timeaxis-time">17:00</div>
+										  	 <div class="timeaxis-info">抢购中</div>
+										  </div>
+								    </div>
+								    <div class="swiper-slide">
+									      <div class="timeaxis-item-inner">
+										     <div class="timeaxis-time">13:00</div>
+										  	 <div class="timeaxis-info">即将开始</div>
+										  </div>
+								    </div>
+								    <div class="swiper-slide">
+									      <div class="timeaxis-item-inner">
+										     <div class="timeaxis-time">11:00</div>
+										  	 <div class="timeaxis-info">即将开始</div>
+										  </div>
+								    </div>
+								    <div class="swiper-slide">
+									      <div class="timeaxis-item-inner">
+										     <div class="timeaxis-time">10:00</div>
+										  	 <div class="timeaxis-info">即将开始</div>
+										  </div>
+								    </div>			    
+								</div>
+						   </div>
+					</div>
+					<!-- 时间轴Swiper end-->
+					<div class="swiper-slide"> 
+						<!--抢购内容-->
+						<div class="ani">
+							<!--抢购标题begin-->
+							<div class="rush-hd">
+								<div class="batch-title">抢购中，先下单先得哦</div>
+								<div class="batch-countdown">
+										<div class="countdown-inf">
+											<span>距结束</span>
+											<strong id="hour_show">0</strong>
+											<span class="colon">:</span>
+											<strong id="minute_show">0</strong>
+											<span class="colon">:</span>
+											<strong id="second_show">0</strong>
+										</div><!--倒计时模块-->										
+								</div>
+							</div>
+							<!--抢购标题end-->
+							<div class="out-item-common">
+								<!--商品列表begin-->
+								<a href="seckill-detail限时秒杀-详情.html" class="item-common">
+									<div class="item-pic item-pic-bg table-wrap">
+										<img src="../images/sy_1banner_02.jpg">
+									</div>
+									<div class="item-info">
+										<div class="item-title">男风窗 新款休闲裤裤男 时尚百搭水洗韩版修身休闲裤 男式弹力小男风窗 新款休闲裤裤男 时尚百搭水洗韩版修身休闲裤 男式弹力小</div>
+										<div class="item-wrap">
+											<div class="item-price">
+												<ins class="item-newprice">￥38</ins>
+												<del class="item-oldprice">￥68</del>
+											</div>
+											<div class="item-status">
+												<div class="item-action">立即抢购</div>
+												<div class="status-bar-box">
+													已售40%
+													<div class="status-bar">
+														<div class="status-progress" style="width:30%;"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<!--商品列表end-->
+								<!--商品列表begin-->
+								<a href="seckill-detail限时秒杀-详情.html" class="item-common">
+									<div class="item-pic item-pic-bg table-wrap">
+										<img src="../images/sy_1banner_02.jpg">
+									</div>
+									<div class="item-info">
+										<div class="item-title">男风窗 新款休闲裤裤男 时尚百搭水洗韩版修身休闲裤 男式弹力小男风窗 新款休闲裤裤男 时尚百搭水洗韩版修身休闲裤 男式弹力小</div>
+										<div class="item-wrap">
+											<div class="item-price">
+												<ins class="item-newprice">￥38</ins>
+												<del class="item-oldprice">￥68</del>
+											</div>
+											<div class="item-status">
+												<div class="item-action">立即抢购</div>
+												<div class="status-bar-box">
+													已售40%
+													<div class="status-bar">
+														<div class="status-progress" style="width:30%;"></div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</a>
+								<!--商品列表end-->						
+							</div>
+						</div>
+						<!--抢购内容-->
+						<div class="ani">内容2</div>
+						<div class="ani">内容3</div>
+						<div class="ani">内容4</div>
+					</div>
+				</div>
+				<div id="pullUp">
+					<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+				</div>
+			</div>
+		</div>
+		<!--主体部分end-->
+	</body>
+	<!--限时秒杀时间轴begin-->
+	<script src="../scripts/swiper.min.js"></script>
+	<script src="../scripts/swiper-timeaxis.js"></script>
+	<!--限时秒杀时间轴end-->
+</html>

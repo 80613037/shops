@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>众筹</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">	
+		<!--上拉加载更多-->
+		<link rel="stylesheet" href="../styles/scrollbar.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+		<!--上拉加载更多-->
+		<script type="text/javascript" src="../scripts/iscroll.js"></script> 
+		<script type="text/javascript" src="../scripts/iscrollfresh-pt.js"></script> 		
+	</head>
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap" id="wrapper">	
+			<div id="scroller">	
+				<div id="pullDown">
+					<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+				</div>	
+				<div id="thelist">
+					<!--众筹商品展示begin-->
+					<div class="pro-wrap shop-pro-wrap on">
+						<!--商品循环部分(建议图片200*190)begin-->
+						<div class="pro-list">
+							<div class="pro-img-pannel table-wrap">
+								<img src="../images/sy_1banner_02.jpg">
+							</div>
+							<div class="img-title-bar">
+								泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+							</div>
+							<div class="img-title-bar">
+								<div class="ui-progressbar">
+									<div class="ui-progressbar-value" style="width:20%;">	
+									</div>
+								</div>
+							</div>
+							<div class="img-price crowd-img-price">
+								<span class="price-tit">已筹：</span>
+								<span class="price-num">￥200万</span>
+								<span class="group-num">184%</span>
+							</div>
+						</div>
+						<!--商品循环部分end-->
+						<!--商品循环部分begin-->
+						<div class="pro-list">
+							<div class="pro-img-pannel table-wrap">
+								<img src="../images/sy_1banner_02.jpg">
+							</div>
+							<div class="img-title-bar">
+								泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+							</div>
+							<div class="img-title-bar">
+								<div class="ui-progressbar">
+									<div class="ui-progressbar-value" style="width:80%;">	
+									</div>
+								</div>
+							</div>					
+							<div class="img-price">
+								<span class="discount-price">￥20.9</span>
+								<del class="cost-price">￥20.9</del>
+								<span class="group-num">34%</span>
+							</div>
+						</div>
+						<!--商品循环部分end-->	
+					<!--众筹商品展示begin-->
+					<div class="pro-wrap shop-pro-wrap on">
+						<!--商品循环部分(建议图片200*190)begin-->
+						<div class="pro-list">
+							<div class="pro-img-pannel table-wrap">
+								<img src="../images/sy_1banner_02.jpg">
+							</div>
+							<div class="img-title-bar">
+								泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+							</div>
+							<div class="img-title-bar">
+								<div class="ui-progressbar">
+									<div class="ui-progressbar-value" style="width:20%;">	
+									</div>
+								</div>
+							</div>
+							<div class="img-price crowd-img-price">
+								<span class="price-tit">已筹：</span>
+								<span class="price-num">￥200万</span>
+								<span class="group-num">184%</span>
+							</div>
+						</div>
+						<!--商品循环部分end-->
+						<!--商品循环部分begin-->
+						<div class="pro-list">
+							<div class="pro-img-pannel table-wrap">
+								<img src="../images/sy_1banner_02.jpg">
+							</div>
+							<div class="img-title-bar">
+								泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+							</div>
+							<div class="img-title-bar">
+								<div class="ui-progressbar">
+									<div class="ui-progressbar-value" style="width:80%;">	
+									</div>
+								</div>
+							</div>					
+							<div class="img-price">
+								<span class="discount-price">￥20.9</span>
+								<del class="cost-price">￥20.9</del>
+								<span class="group-num">34%</span>
+							</div>
+						</div>
+						<!--商品循环部分end-->							
+					</div>
+					<!--众筹商品展示end-->	
+				</div>
+				<div id="pullUp">
+					<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+				</div>				
+			</div>
+		</div>
+		<!--主体部分end-->		
+	</body>
+</html>

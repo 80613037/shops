@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>   
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>申请退款</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">	
+		<link rel="stylesheet" href="../styles/coment.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot">			
+			<!--一条订单begin-->
+			<div class="evaluate-box tuikuan-box mar-top">
+				<p class="pad-lr hd"><span>退款原因</span></p>
+				<div class="pad-lr mar-bot">
+					<textarea class="text-fill-per wantsay" placeholder="请输入您的退款原因"></textarea>			
+				</div>	
+				<p class="pad-lr hd"><span>图片举证</span><span class="corh">（最多可上传4张）</span></p>					
+				<div class="box-bar pad-lr mar-bot">				
+					<div class="box-bar-list1">
+						<div class="upfile-img fl">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+						</div>
+						<div class="upfile-img fl mar-l">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+						</div>
+						<div class="upfile-img fl mar-l">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+						</div>
+						<div class="upfile-img fl mar-l">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+					</div>						
+					</div>
+				</div>	
+			</div>
+			<!--一条订单end-->			
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->	
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="buynow foot-block1 corbai">
+					提交
+				</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->	
+	</body>
+<script src="../scripts/custom-index.js"></script>
+<!--图片上传-->
+<script src="../scripts/upimg1.js"></script>	
+</html>

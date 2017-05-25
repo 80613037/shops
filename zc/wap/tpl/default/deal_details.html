@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>商品详情</title>
+    <!--字体图标-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/iconfont/iconfont.css">
+    <!--公共样式-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/NormalizeFile.css">
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/public.css">
+    <!--自定义样式-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/style.css">
+    <!--jquery库有此轮播的需要引用低版本的库-->
+    <script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/jquery-3.1.0.js"></script>
+    <!--rem自适应-->
+    <script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/flexible.js"></script>
+</head>
+<style>
+.pp{
+    background-color: #dd2727; color:#fff; text-align:center;
+    width: 110%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff !important;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+.pt{
+    background-color: lightgrey; color:#fff; text-align:center;
+    width: 110%;
+    height: 30px;
+    line-height: 30px;
+    color: #fff !important;
+    cursor: pointer;
+    display: block;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+}
+</style>
+<body>
+<!--主体部分begin-->
+<div class="wrap pad-bot">
+    <!--广告位 建议上传图片（750*370）begin-->
+    <div class="ad-seckill table-wrap">
+        <img src="{$deal_info.image}" width="414" height="205">
+    </div>
+    <!--广告位 建议上传图片（750*370）end-->
+    <!--小迪云智能管家锁 begin-->
+    <div class="intelligent-part mar-bot">
+        <h3 class="zny">{$deal_info.name}</h3>
+        <div class="circle-count-bar box-bar mar-bot">
+            <div class="support-num box-bar-list">
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <span class="quantum">{$deal_info.person}</span>
+                    </div>
+                </div>
+                <div class="circle-inf">
+                    支持人数
+                </div>
+            </div>
+            <div class="all-the-chips box-bar-list">
+                <div class="outer-circle outer-m-circle">
+                    <span class="quantum">{$deal_info.percent}%</span>
+                    <p class="state">众筹中</p>
+                </div>
+            </div>
+            <div class="support-num box-bar-list">
+                {if $deal_info.status eq 1}
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <span class="quantum">成功</span>
+                    </div>
+                </div>
+                {/if}
+                {if $deal_info.status eq 2}
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <span class="quantum">失败</span>
+                    </div>
+                </div>
+                {/if}
+                {if $deal_info.status eq 3}
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <span class="quantum">{$deal_info.remain_days}<b>天</b></span>
+                    </div>
+                </div>
+                {/if}
+                {if $deal_info.status eq 4}
+                <div class="outer-circle">
+                    <div class="inner-circle">
+                        <span class="quantum">长期</span>
+                    </div>
+                </div>
+                {/if}
+                <div class="circle-inf">
+                    剩余时间
+                </div>
+            </div>
+        </div>
+        <div class="amount-stat-panel mar-bot">
+            <ul class="box-bar">
+                <li class="box-bar-list">
+                    <div class="num">￥<span>{$deal_info.limit_price_format}</span></div>
+                    <div class="ziinf">目标金额</div>
+                </li>
+                <li class="box-bar-list">
+                    <div class="num">￥<span>{$deal_info.total_virtual_price_format}</span></div>
+                    <div class="ziinf">已筹金额</div>
+                </li>
+            </ul>
+        </div>
+        <div class="wenzi-inf mar-bot">
+            {function name="msubstr" v=$deal_info.brief p=0 e=60}
+        </div>
+        <a href="./wap/index.php?ctl=deal&id={$deal_info.id}&f=c" class="see-dt mar-top">
+            查看项目详情>
+        </a>
+    </div>
+    <!--小迪云智能管家锁 end-->
+    <!--选择回报begin-->
+    <div class="repay-wrap mar-bot">
+        <div class="pepay-hd">
+            <h3>选择回报</h3>
+        </div>
+        <div class="pepay-bd">
+            <ul>
+                {foreach from=$deal_info.deal_item_list item=item key=k}
+                <li class="pepay-list">
+                    <div class="pad10">
+                        {if $deal_info.remain_days>0}
+                            {if ($item.support_count+$item.virtual_person) < $item.limit_user or $item.limit_user eq 0}
+                            <div class="line box-bar">
+                                <div class="support-l box-bar-list">
+                                    <div class="pri">支持：￥{$item.price_format}</div>
+                                    <div class="per"><b>{$item.person} </b>位支持者</div>
+                                </div>
+                                <div class=" cell">
+                                    <!--<span class="single-rad"></span>-->
+                                    <p class="pp" onclick="window.location.href='{$item.cart_url}'">立即支持</p>
+                                </div>
+                            </div>
+                            {else}
+                            <div class="line box-bar">
+                                <div class="support-l box-bar-list">
+                                    <div class="pri">支持：￥{$item.price_format}</div>
+                                    <div class="per"><b>已满额</b></div>
+                                </div>
+                                <div class=" cell">
+                                    <!--<span class="single-rad"></span>-->
+                                    <p class="pt">立即支持</p>
+                                </div>
+                            </div>
+                            {/if}
+                        {else}
+                        <div class="line box-bar">
+                            <div class="support-l box-bar-list">
+                                <div class="pri">支持：￥{$item.price_format}</div>
+                                <div class="per"><b>{$item.person} </b>位支持者</div>
+                            </div>
+                            <div class=" cell">
+                                <!--<span class="single-rad"></span>-->
+                                <p class="pt" onclick="window.location.href='{$item.cart_url}'">立即支持</p>
+                            </div>
+                        </div>
+                        {/if}
+
+                        <div class="suppor-con">
+                            {$item.description}
+                        </div>
+                        <div class="box-bar">
+                            <div class="box-bar-list">
+                                <!--<div class="peis-l"></div>-->
+                            </div>
+                            <div class="cell">
+                                <span class="zk-btn">展开</span>
+                            </div>
+                        </div>
+                        <div class="view-panel">
+                            {foreach from=$item.images item=image}
+                            <img class="pimg" src="{$image.image}">
+                            {/foreach}
+                        </div>
+                    </div>
+                </li>
+                {/foreach}
+
+            </ul>
+        </div>
+    </div>
+    <!--选择回报end-->
+</div>
+<!--主体部分end-->
+<!--固定的底部begin-->
+<footer class="footer">
+    <div class="detail-footer">
+        <div class="share foot-block1">
+            <i class="iconfont">&#xe605;</i>
+            <p>分享</p>
+        </div>
+        <div class="buynow supp foot-block1" onclick="layer.msg('请选择相应的回报支持！');">我要支持</div>
+    </div>
+</footer>
+<!--固定的底部end-->
+</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/custom-index.js"></script>
+<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/layer1.js"></script>
+
+</html>

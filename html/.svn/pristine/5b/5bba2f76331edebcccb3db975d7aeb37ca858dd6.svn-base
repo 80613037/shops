@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>订单详情</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">	
+		<link rel="stylesheet" href="../styles/coment.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot mar-top">
+			<!--一条订单begin-->
+			<ul class="hotel-ul mar-bot">
+				<li class="hotel-list pad10 bgwid">
+					<div class="tw-panel box-bar mar-b">
+						<div class="hotel-pic-box cell">
+							<div class="hotel-pic" style="background-image:url(../images/sy_1banner_02.jpg);"></div>
+						</div>
+						<div class="hotel-inf box-bar-list">
+							<h3>手撕牛肉干500g正宗内蒙古特产手撕风干牛肉干零食小吃</h3>
+							<div class="hotel-other">
+								<b class="cor fl">￥123.00</b>
+								<b class="fr">X2</b>									
+							</div>
+						</div>
+					</div>					
+				</li>							
+			</ul>
+			<!--一条订单end-->			
+			<div class="single-row box-bar pad10">
+				<div class="tit">物流公司</div>
+				<div class="box-bar-list">
+					<input class="inp-style" type="text" autocomplete="off" placeholder="请输入物流公司名称">
+				</div>
+			</div>
+			<div class="single-row box-bar pad10">
+				<div class="tit">运单编号</div>
+				<div class="box-bar-list">
+					<input class="inp-style" type="text" autocomplete="off" placeholder="请你输入运单编号">
+				</div>
+			</div>			
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->	
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="buynow foot-block1 corbai">
+					提交
+				</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->	
+	</body>
+<script src="../scripts/custom-index.js"></script>
+<!--图片上传-->
+<script src="../scripts/upimg1.js"></script>	
+</html>

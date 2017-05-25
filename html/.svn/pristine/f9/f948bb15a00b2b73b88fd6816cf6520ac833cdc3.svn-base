@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>评价</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">	
+		<link rel="stylesheet" href="../styles/coment.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot mar-top">
+			<!--一条订单begin-->
+			<ul class="hotel-ul mar-bot">
+				<li class="hotel-list pad10 bgwid">
+					<div class="tw-panel box-bar mar-b">
+						<div class="hotel-pic-box cell">
+							<div class="hotel-pic" style="background-image:url(../images/sy_1banner_02.jpg);"></div>
+						</div>
+						<div class="hotel-inf box-bar-list">
+							<h3>手撕牛肉干500g正宗内蒙古特产手撕风干牛肉干零食小吃</h3>
+							<div class="hotel-other">
+								<b class="cor fl">￥123.00</b>
+								<b class="fr">X2</b>									
+							</div>
+						</div>
+					</div>					
+				</li>							
+			</ul>
+			<!--一条订单end-->			
+			<!--评价begin-->
+			<div class="evaluate-box tuikuan-box">
+				<p class="pad-lr hd"><span>评价</span></p>
+				<div class="pad-lr mar-bot">
+					<textarea class="text-fill-per wantsay" placeholder="请输入您的评价内容"></textarea>			
+				</div>	
+				<p class="pad-lr hd"><span>晒图</span><span class="corh">（最多可上传4张）</span></p>					
+				<div class="box-bar pad-lr mar-bot">				
+					<div class="box-bar-list1">
+						<div class="upfile-img fl">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+						</div>
+						<div class="upfile-img fl mar-l">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+						</div>
+						<div class="upfile-img fl mar-l">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+						</div>
+						<div class="upfile-img fl mar-l">
+							<div id="preview">
+								<img id="imghead" border=0 src="../images/jtu.jpg"/>
+							</div>
+							<input class="upfile" type="file" onchange="previewImage(this)" />							
+					</div>						
+					</div>
+				</div>	
+			</div>
+			<!--评价end-->			
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->	
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="buynow foot-block1 corbai">
+					提交
+				</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->	
+	</body>
+<script src="../scripts/custom-index.js"></script>
+<!--图片上传-->
+<script src="../scripts/upimg1.js"></script>	
+</html>

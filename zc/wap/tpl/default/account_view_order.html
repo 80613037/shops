@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+	<title>订单详情</title>
+	<!--字体图标-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/iconfont/iconfont.css">
+	<!--公共样式-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/NormalizeFile.css">
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/public.css">
+	<!--自定义样式-->
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/style.css">
+	<link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/coment.css">
+	<!--jquery库有此轮播的需要引用低版本的库-->
+	<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/jquery-3.1.0.js"></script>
+	<!--rem自适应-->
+	<script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/flexible.js"></script>
+</head>
+<body style="background: #f4f6f9;">
+<!--主体部分begin-->
+<div class="wrap">
+	<!--订单信息begin-->
+	<div class="order-inf box-bar bor-b">
+		<div class="item-pic cell" style="background-image: url({$deal_info.image});"></div>
+		<div class="item-con box-bar crowd-part box-bar-col">
+			<p class="mingzi">{$order_info.deal_name}</p>
+			<p class="shuliang corh">&nbsp;</p>
+			<p class="dingdan">订单编号：{$order_info.id}{$order_info.deal_id}{$order_info.deal_item_id}{$order_info.user_id}</p>
+		</div>
+	</div>
+	<!--订单信息end-->
+	<div class="other-inf-part pad10 bgbai bor-b">
+		<div class="finll-form-bar box-bar">
+			<div class="order-pay cell widauto">档位金额：{$order_info.deal_price}元</div>
+		</div>
+		<div class="finll-form-bar box-bar">
+			<div class="order-pay cell widauto">支持数量：1</div>
+		</div>
+		<div class="finll-form-bar box-bar">
+			<div class="order-pay cell widauto">配送费用：{if $order_info.delivery_price eq 0.00}{$order_info.delivery_fee}元{else}免邮费{/if}</div>
+		</div>
+		<div class="finll-form-bar box-bar">
+			<div class="order-pay cell widauto">总计金额：{$order_info.credit_pay}元 </div>
+		</div>
+	</div>
+	<!--收货地址begin-->
+	{if $order_info.consignee neq ''}
+	<div class="pad10 bgbai">
+		<div class="line-bar box-bar dkj-panel mar-b0" onclick="window.location.href='#'">
+			<div class="position-icon"></div>
+			<div class="position-inf mar-r0">
+				<div class="per-inf">
+					<span class="name">收货人：{$order_info.consignee}</span>
+				</div>
+				<div class="per-inf">
+					<span class="name">联系电话：{$order_info.mobile}</span>
+				</div>
+				<div class="dt-addr">
+					收货地址：{$order_info.province}{$order_info.city}{$order_info.address}
+				</div>
+			</div>
+		</div>
+	</div>
+	{/if}
+	<!--收货地址end-->
+	<h3 class="hf-con pad-lr">回报内容</h3>
+	<div class="pad10 bgbai mar-bot">
+		<div class="line-bar box-bar dkj-panel mar-b0">
+			<p>{$deal_item.description}</p>
+		</div>
+	</div>
+	{if ($order_info.consignee neq '') && (2 eq 1)}
+	<div class="other-inf-part pad10 bgbai">
+		<div class="finll-form-bar box-bar">
+			<div class="order-pay cell widauto corh">物流公司：中通快递</div>
+		</div>
+		<div class="finll-form-bar box-bar">
+			<div class="order-pay cell widauto corh">运单编号：ZT2016050600325698</div>
+		</div>
+		<div class="finll-form-bar box-bar">
+			<div class="order-pay cell widauto corh">发货时间：2016-09-13 13:15:32</div>
+		</div>
+	</div>
+	{/if}
+</div>
+<!--主体部分end-->
+</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/custom-index.js"></script>
+</html>

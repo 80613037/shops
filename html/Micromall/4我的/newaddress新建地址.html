@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>新建地址</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+		<!--省市县三级联动-->
+		<script src="../scripts/Popt.js"></script>
+		<script src="../scripts/cityJson.js"></script>
+		<script src="../scripts/citySet.js"></script>
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot1">
+			<div class="single-row box-bar pad10">
+				<div class="tit">收货人</div>
+				<div class="box-bar-list">
+					<input class="inp-style" type="text" autocomplete="off" placeholder="请输入姓名">
+				</div>
+			</div>	
+			<div class="single-row box-bar pad10">
+				<div class="tit">联系方式</div>
+				<div class="box-bar-list">
+					<input class="inp-style" type="text" autocomplete="off" placeholder="请输入手机号码">
+				</div>
+			</div>	
+			<div class="single-row box-bar pad10">
+				<div class="tit">所在地区</div>
+				<div class="box-bar-list">
+					<input class="inp-style" id="city" type="text" autocomplete="off" placeholder="请选择所在地区">
+				</div>
+				<div class="position-jt"></div>
+			</div>	
+			<div class="single-row box-bar pad10">
+				<div class="tit">详细地址</div>
+				<div class="box-bar-list">
+					<input class="inp-style" type="text" autocomplete="off" placeholder="请输入街道地址">
+				</div>
+			</div>	
+			<div class="single-row box-bar pad10 default-address">
+				<div class="tit"><span class="sel-icon"></span></div>
+				<div class="box-bar-list">
+					<span class="sel-label fl">设为默认地址</span><span class="notes fl">（每次购买时会默认使用该地址）</span>
+				</div>
+			</div>				
+		</div>
+		<!--主体部分end-->	
+		<footer class="footer">
+			<div class="out-btn">
+				<a class="new-btn" href="#">确认</a>
+			</div>
+		</footer>		
+	</body>
+<script type="text/javascript">
+$("#city").click(function (e) {
+	SelCity(this,e);
+});
+</script>	
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>

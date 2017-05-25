@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="Generator" />
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0,minimum-scale=0.5">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>{$page_title}</title>
+    <meta name="keywords" content="{$seo_keyword}" />
+    <meta name="description" content="{$seo_description}" />
+
+
+    <?php
+        $this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/layout.css";
+        $this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/style.css";
+        $this->_var['pagecss'][] = $this->_var['TMPL_REAL']."/css/weebox.css";
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/jquery.js";
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/jquery.bgiframe.js";
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/jquery.weebox.js";
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/js.js";
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/jquery.bgiframe.js";
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/jquery.weebox.js";
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/script.js";
+        $this->_var['cpagejs'][]='';
+        if(app_conf("APP_MSG_SENDER_OPEN")==1)
+        {
+        $this->_var['pagejs'][] = $this->_var['TMPL_REAL']."/js/msg_sender.js";
+        $this->_var['cpagejs'][] = $this->_var['TMPL_REAL']."/js/msg_sender.js";
+        }
+    ?>
+    <link rel="stylesheet" type="text/css" href="{$APP_ROOT_URL}/css/Font-Awesome-4.2.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="{function name="parse_css" v="$pagecss"}" />
+    <script type="text/javascript">
+        var APP_ROOT = '{$APP_URL}';
+        var APP_ROOT_ORA = '{$PC_URL}';
+        {if app_conf("APP_MSG_SENDER_OPEN") eq 1}
+        var send_span = {function name="app_conf" v="SEND_SPAN"}000;
+        {/if}
+    </script>
+    <script type="text/javascript" src="{function name="parse_script" v="$pagejs" c="$cpagejs"}"></script>
+    <!--字体图标-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/iconfont/iconfont.css">
+    <!--公共样式-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/NormalizeFile.css">
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/public.css">
+    <!--自定义样式-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/style.css">
+
+
+    </head>
+    <body class="bgbody">
+    <?php
+        $this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/ajax_user_login.js";
+        $this->_var['dcpagejs'][] = $this->_var['TMPL_REAL']."/js/ajax_user_login.js";
+    ?>
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+<!-- 登录 开始 -->
+
+
+    <div class="wrap">
+        <div class="reg-top"></div>
+
+        <form class="reg-form" id="user_login_form" name="user_login_form" action="{url_wap r="user#do_login"}">
+            <!--单行begin-->
+            <div class="field-bar">
+                <div class="label">手机号</div>
+                <div class="field-control">
+                    <input type="text" name="email" id="email" class="input-required" autocomplete="off" placeholder="请输入11位手机号" maxlength="11"/>
+                </div>
+            </div>
+            <!--单行end-->
+            <!--单行begin-->
+            <div class="field-bar">
+                <div class="label">密码</div>
+                <div class="field-control">
+                    <input type="password" name="user_pwd"  id="user_pwd" class="input-required" autocomplete="off" placeholder="请输入6-16位数字或字母"/>
+                </div>
+            </div>
+            <!--单行end-->
+            <div class="submit-bar">
+                <input type="hidden" name="ajax" value="1">
+                <!--<button type="button" class="submit-btn sel" name="submit_form" id="loginsubmit" >登录</button>-->
+                <input class="submit-btn sel" type="button" name="submit_form" value="登录" rel="ui-button">
+            </div>
+
+        </form>
+    </div>
+

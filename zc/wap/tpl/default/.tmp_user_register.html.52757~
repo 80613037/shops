@@ -1,0 +1,44 @@
+{include file="inc/header.html"}
+<script>
+	{if app_conf("USER_VERIFY") eq 2}
+		var is_mobile=1;
+	{else}
+		var is_mobile=0;
+	{/if}
+</script>
+<?php
+$this->_var['dpagejs'][] = $this->_var['TMPL_REAL']."/js/ajax_user_register.js";
+$this->_var['dcpagejs'][] = "";
+?>
+<script type="text/javascript" src="{function name="parse_script" v="$dpagejs" c="$dcpagejs"}"></script>
+<style type="text/css">
+	.btn_yzm{width:150px;float:none;}
+	.textbox{
+		border:1px solid #ddd;
+	}
+</style>
+<!--login-->  
+<section class="user_register">
+  <form id="user_register_form" name="user_register_form" action="{url_wap r="user#do_register"}">
+	<div class="login p10 tc">
+		<span class="title pt10">注册盈众网会员</span>
+		{if app_conf("USER_VERIFY") neq 2}
+		<input class="input100 sizing" type="text" name="email" value="" placeholder="输入电子邮箱" >
+		{else}
+		<input class="input100 sizing" type="text" name="mobile" id="settings-mobile" value="" placeholder="输入手机">
+ 		{/if}
+ 		<input class="input100 sizing" type="text" name="user_name" value="" placeholder="会员名">
+		<input class="input100 sizing" type="password" name="user_pwd" value="" placeholder="输入密码">
+		{if app_conf("USER_VERIFY") eq 2}
+		<div class="webkit-box">
+			<input class="input100 webkit-box-flex" type="text" name="verify_coder" value="" placeholder="输入验证码">
+			<input class="ui-button btn_yzm bg_red ml10" type="button" value="获取验证码"  id="J_send_sms_verify" style="background: #ff9000;border-radius: 5px;display: block;width:110px;	height:40px;line-height:40px;color: #fff !important;font-size: 1.6rem;text-align: center;letter-spacing: 2px;margin:5px 0 0 10px">
+		</div>
+		{/if}
+		<div class="blank15"></div> 
+		<input class="ui-button theme_color" type="button" name="submit_form"  value="注册" style="background:#4dbdf5;border-radius:5px;display: block;width:100%;height:38px;line-height:38px;color:#fff !important;font-size:1.6rem;text-align:center;letter-spacing:2px;">
+		<input type="hidden" value="1" name="ajax" />
+	</div>
+  </form>
+</div>
+{include file="footer.html"}

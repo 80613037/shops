@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>首页</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<!--轮播-->
+		<link rel="stylesheet" href="../styles/trundle.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+		<!--需要放在头部，否则倒计时不执行-->
+		<script type="text/javascript" src="../scripts/custom-index.js"></script> 
+	</head>
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot">
+			<!--轮播begin 建议上传图片最佳比例2:1-->
+			<div class="main_visual">
+				<div class="flicking_con">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+				</div>
+				<div class="main_image">
+					<ul>
+						<li><span class="img_1"><img src="../images/sy_1banner_02.jpg"></span></li>
+						<li><span class="img_2"><img src="../images/sy_1banner_02.jpg"></span></li>
+						<li><span class="img_3"><img src="../images/sy_1banner_02.jpg"></span></li>
+					</ul>
+					<a href="javascript:;" id="btn_prev"></a>
+					<a href="javascript:;" id="btn_next"></a>
+				</div>
+			</div>			
+			<!--轮播end-->
+			<!--图文菜单(秒杀，拼团，众筹，收益)begin-->
+			<div class="graph-text-menu">
+				<ul>
+					<li class="seckill" onclick="window.location.href='seckill秒杀.html'" style="background-image:url(../images/ms.jpg)"></li>
+					<li class="fightgroups" onclick="window.location.href='fightgroups拼团.html'" style="background-image:url(../images/pt.jpg)"></li>
+					<li class="crowd" onclick="window.location.href='crowdfunding众筹.html'" style="background-image:url(../images/zc.jpg)"></li>
+					<li class="income" onclick="window.location.href='income收益.html'" style="background-image:url(../images/sy.jpg)"></li>
+				</ul>
+			</div>
+			<!--图文菜单end-->
+			<!--特品汇和凡品汇begin-->
+			<div class="special-offer">
+				<ul class="box-bar">
+					<li class="box-bar-list tp" onclick="window.location.href='#'" style="background-image:url(../images/tp.jpg)"></li>
+					<li class="box-bar-list fp" onclick="window.location.href='#'" style="background-image:url(../images/fp.jpg)"></li>
+				</ul>
+			</div>
+			<!--特品汇和凡品汇end-->
+			<!--限时秒杀标题begin-->
+			<div class="seckill-hd hdbar" onclick="window.location.href='seckill秒杀.html'">
+				<div class="time-item">
+					<strong id="hour_show">0</strong>
+					<span class="colon">:</span>
+					<strong id="minute_show">0</strong>
+					<span class="colon">:</span>
+					<strong id="second_show">0</strong>
+				</div><!--倒计时模块-->				
+			</div>
+			<!--限时秒杀标题end-->
+			<!--秒杀商品展示begin-->
+			<div class="pro-wrap">
+				<!--商品循环部分(建议图片200*190)begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-price">
+						<span class="discount-price">￥20.9</span>
+						<del class="cost-price">￥20.9</del>
+					</div>
+				</div>
+				<!--商品循环部分end-->
+				<!--商品循环部分begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-price">
+						<span class="discount-price">￥20.9</span>
+						<del class="cost-price">￥20.9</del>
+					</div>
+				</div>
+				<!--商品循环部分end-->			
+			</div>
+			<!--秒杀商品展示end-->
+			<!--拼团标题begin-->
+			<div class="seckill-hd  groups-hd" onclick="window.location.href='fightgroups拼团'">				
+			</div>
+			<!--拼团标题end-->
+			<!--拼团商品展示begin-->
+			<div class="pro-wrap">
+				<!--商品循环部分(建议图片200*190)begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-price">
+						<span class="discount-price">￥20.9</span>
+						<del class="cost-price">￥20.9</del>
+						<span class="group-num">10人团</span>
+					</div>
+				</div>
+				<!--商品循环部分end-->
+				<!--商品循环部分begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-price">
+						<span class="discount-price">￥20.9</span>
+						<del class="cost-price">￥20.9</del>
+						<span class="group-num">10人团</span>
+					</div>
+				</div>
+				<!--商品循环部分end-->
+				<!--商品循环部分begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-price">
+						<span class="discount-price">￥20.9</span>
+						<del class="cost-price">￥20.9</del>
+						<span class="group-num">10人团</span>
+					</div>
+				</div>
+				<!--商品循环部分end-->
+				<!--商品循环部分begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-price">
+						<span class="discount-price">￥20.9</span>
+						<del class="cost-price">￥20.9</del>
+						<span class="group-num">10人团</span>
+					</div>
+				</div>
+				<!--商品循环部分end-->				
+			</div>
+			<!--拼团商品展示end-->	
+			<!--广告位建议上传图片（750*250）begin-->
+			<div class="adsense-panel table-wrap">
+				<img src="../images/sy_1banner_02.jpg" alt="">
+			</div>
+			<!--广告位end-->
+			<!--众筹标题begin-->
+			<div class="seckill-hd  crowd-funding-hd" onclick="window.location.href='crowdfunding众筹.html'">				
+			</div>
+			<!--众筹标题end-->
+			<!--众筹商品展示begin-->
+			<div class="pro-wrap">
+				<!--商品循环部分(建议图片200*190)begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-title-bar">
+						<div class="ui-progressbar">
+							<div class="ui-progressbar-value" style="width:20%;">	
+							</div>
+						</div>
+					</div>
+					<div class="img-price crowd-img-price">
+						<span class="price-tit">已筹：</span>
+						<span class="price-num">￥200万</span>
+						<span class="group-num">184%</span>
+					</div>
+				</div>
+				<!--商品循环部分end-->
+				<!--商品循环部分begin-->
+				<div class="pro-list">
+					<div class="pro-img-pannel table-wrap">
+						<img src="../images/sy_1banner_02.jpg">
+					</div>
+					<div class="img-title-bar">
+						泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+					</div>
+					<div class="img-title-bar">
+						<div class="ui-progressbar">
+							<div class="ui-progressbar-value" style="width:80%;">	
+							</div>
+						</div>
+					</div>					
+					<div class="img-price">
+						<span class="discount-price">￥20.9</span>
+						<del class="cost-price">￥20.9</del>
+						<span class="group-num">34%</span>
+					</div>
+				</div>
+				<!--商品循环部分end-->							
+			</div>
+			<!--众筹商品展示end-->				
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->
+		<footer class="footer">
+			<ul>
+				<li class="index on">
+					<a href="index首页.html">
+						<span></span>
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="mall">
+					<a href="mall商城.html">
+						<span></span>
+						<p>商城</p>
+					</a>
+				</li>
+				<li class="cart">
+					<a href="cart购物车.html">
+						<span></span>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li class="user">
+					<a href="user我的.html">
+						<span></span>
+						<p>我的</p>
+					</a>
+				</li>				
+			</ul>
+		</footer>
+		<!--固定的底部end-->
+	</body>
+
+<!--轮播begin-->
+<script type="text/javascript" src="../scripts/trundle.js"></script>
+<script type="text/javascript" src="../scripts/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.touchSlider.js"></script>
+<!--轮播end-->
+</html>

@@ -1,0 +1,10 @@
+</div>
+<div class="foot" id="foot">
+    <a href="{url_wap r="index"}">首页</a>
+    <a href="{$PC_URL}">电脑版</a>
+    <a href="{url_wap r="settings#index"}">用户中心</a>
+     <a href="{url_wap r="article_cate"}" style="border:none;">资讯</a>
+    <div class="blank"></div>
+</div>    
+</body>
+</html>

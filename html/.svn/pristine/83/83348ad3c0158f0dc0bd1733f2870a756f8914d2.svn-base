@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>关于我们</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<link rel="stylesheet" href="../styles/wode.css">
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+	</head>
+	<body>
+		<div class="wode">
+		<div class="xiaoxi us-gy">
+			<h2>客服电话</h2>
+			<p>0320-65259651</p>
+			<h2>公司简介</h2>
+			<p>这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里是内容这里。</p>
+			<p class="xx-riqi">2016-10-20</p>
+		</div>		
+		</div>
+	</body>
+</html>

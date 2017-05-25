@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>我的收益</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<link rel="stylesheet" href="../styles/coment.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>		
+	</head>
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap">
+			<!--头部信息begin-->
+            <div class="current-int-wrap profit-wrap mar-bot">
+            	<div class="integral-panel mar-bot">
+            		<p class="zi mar-bot">实际收益（元）</p>
+            		<p class="shu">65124.06</p>
+            	</div>
+            	<div class="see-js-box box-bar">
+            		<div class="box-bar-list exchange-part"><a href="javascript:void();" class="rule-left fr">查看明细</a></div>
+            		<div class="box-bar-list exchange-part"><a href="javascript:void();" class="record-right fl tishi-btn">结算</a></div>
+            	</div>
+            	<div class="codex" onclick="window.location.href='my-rule我的收益-规则.html'">
+            		<span>规则</span>
+            	</div>
+            </div>	
+            <!--头部信息end-->
+			<div class="finll-form-bar box-bar bor-b pad-lr">
+				<div class="box-bar-list tex-l">我的分享团队</div>
+			</div>    
+			<div class="finll-form-bar box-bar bor-b pad-lr">
+				<div class="box-bar-list tex-l">一级团队</div>
+				<div class="box-bar-list tex-r">3人</div>
+			</div>   
+			<div class="finll-form-bar box-bar bor-b pad-lr">
+				<div class="box-bar-list tex-l">二级团队</div>
+				<div class="box-bar-list tex-r">11人</div>
+			</div>   			
+		</div>
+		<!--主体部分end-->
+		<!--弹窗-->
+		<div class="tc-bd">
+			<div class="tc-bd-inner">
+				<h3>提示</h3>
+				<p>是否结算当前收益，结算后的收
+益进入余额？</p>
+				<div class="wrap-btn box-bar">
+					<a class="quxiao-btn box-bar-list">取消</a>
+					<a class="sure-btn box-bar-list">确定</a>
+				</div>
+			</div>
+		</div>		
+	</body>
+		<script type="text/javascript" src="../scripts/custom-index.js"></script>		
+</html>

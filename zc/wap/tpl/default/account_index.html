@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <title>我的众筹</title>
+    <!--字体图标-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/iconfont/iconfont.css">
+    <!--公共样式-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/NormalizeFile.css">
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/public.css">
+    <!--自定义样式-->
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/style.css">
+    <link rel="stylesheet" href="{$ROOT_URL}/Apps/Home/View/mobile/styles/coment.css">
+    <!--jquery库有此轮播的需要引用低版本的库-->
+    <script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/jquery-3.1.0.js"></script>
+    <!--rem自适应-->
+    <script src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/flexible.js"></script>
+</head>
+<body>
+<!--主体部分begin-->
+<div class="wrap">
+    <!--订单信息begin-->
+    {foreach from=$order_list item=order_item}
+    <a href="{url_wap r="account#view_order" p="id=$order_item.id"}">
+    <div class="order-inf box-bar mar-bot">
+        <div class="item-pic cell" style="background-image: url({function name="get_spec_image" v=$order_item.deal_info.image w=60 h=45 g=1});"></div>
+        <div class="item-con box-bar crowd-part box-bar-col">
+            <p class="mingzi">{$order_item.deal_name}</p>
+            <p class="dingdan corh">订单编号：{$order_item.id}{$order_item.deal_id}{$order_item.deal_item_id}{$order_item.user_id}</p>
+            <p class="shuliang corh">支持数量：1</p>
+        </div>
+        <div class="cell cor">￥{$order_item.total_price}</div>
+    </div></a>
+    {/foreach}
+    <!--订单信息end-->
+
+</div>
+<!--主体部分end-->
+</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="{$ROOT_URL}/Apps/Home/View/mobile/scripts/custom-index.js"></script>
+</html>

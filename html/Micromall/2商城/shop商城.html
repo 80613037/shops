@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>商城</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<!--轮播-->
+		<link rel="stylesheet" href="../styles/trundle.css">
+		<!--上拉加载更多-->
+		<link rel="stylesheet" href="../styles/scrollbar.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+		<!--需要放在头部，否则倒计时不执行-->
+		<script type="text/javascript" src="../scripts/custom-index.js"></script>
+		<!--上拉加载更多-->
+		<script type="text/javascript" src="../scripts/iscroll.js"></script> 
+		<script type="text/javascript" src="../scripts/iscrollfresh-sc.js"></script> 		
+	</head>
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot" id="wrapper">
+			<div id="scroller">	
+				<div id="pullDown">
+					<span class="pullDownIcon"></span><span class="pullDownLabel">下拉刷新...</span>
+				</div>
+				<div id="thelist">			
+					<!--轮播begin 建议上传图片最佳比例2:1-->
+					<div class="main_visual">
+						<div class="flicking_con">
+							<a href="#">1</a>
+							<a href="#">2</a>
+							<a href="#">3</a>
+						</div>
+						<div class="main_image">
+							<ul>
+								<li><span class="img_1"><img src="../images/sy_1banner_02.jpg"></span></li>
+								<li><span class="img_2"><img src="../images/sy_1banner_02.jpg"></span></li>
+								<li><span class="img_3"><img src="../images/sy_1banner_02.jpg"></span></li>
+							</ul>
+							<a href="javascript:;" id="btn_prev"></a>
+							<a href="javascript:;" id="btn_next"></a>
+						</div>
+					</div>			
+					<!--轮播end-->
+					<!--商城头部信息begin-->
+					<div class="sc-dtinf-panel">
+						<ul class="box-bar">
+							<li class="box-bar-list">
+								<div class="hd">账户余额</div>
+								<div class="bd">￥500.23</div>
+							</li>
+							<li class="box-bar-list">
+								<div class="hd">积分余额</div>
+								<div class="bd">236</div>								
+							</li>
+							<li class="box-bar-list">
+								<div class="hd">商品分类</div>
+								<div class="bd">特品  凡品</div>								
+							</li>
+							<li class="box-bar-list">
+								<a href="#" class="gt-change">去兑换 ></a>							
+							</li>
+						</ul>
+					</div>
+					<!--商城头部信息end-->
+					<!--拼团标题begin-->
+					<div class="seckill-hd  groups-hd sptj-hd" onclick="window.location.href='fightgroups拼团'">				
+					</div>
+					<!--拼团标题end-->
+					<!--拼团商品展示begin-->
+					<div class="pro-wrap">
+						<!--商品循环部分(建议图片200*190)begin-->
+						<div class="pro-list">
+							<div class="pro-img-pannel table-wrap">
+								<img src="../images/sy_1banner_02.jpg">
+							</div>
+							<div class="img-title-bar">
+								泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+							</div>
+							<div class="img-price">
+								<span class="discount-price">￥20.9</span>
+								<span class="group-num">已售：1456</span>
+							</div>
+						</div>
+						<!--商品循环部分end-->
+						<!--商品循环部分begin-->
+						<div class="pro-list">
+							<div class="pro-img-pannel table-wrap">
+								<img src="../images/sy_1banner_02.jpg">
+							</div>
+							<div class="img-title-bar">
+								泰国新鲜山竹进口油麻竹泰国新鲜山竹进口油麻竹
+							</div>
+							<div class="img-price">
+								<span class="discount-price">￥20.9</span>
+								<span class="group-num">已售：1456</span>
+							</div>
+						</div>
+						<!--商品循环部分end-->			
+					</div>
+					<!--拼团商品展示end-->
+			</div>
+				<div id="pullUp">
+					<span class="pullUpIcon"></span><span class="pullUpLabel">上拉加载更多...</span>
+				</div>
+			</div>			
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->
+		<footer class="footer">
+			<ul>
+				<li class="index">
+					<a href="index首页.html">
+						<span></span>
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="mall on">
+					<a href="mall商城.html">
+						<span></span>
+						<p>商城</p>
+					</a>
+				</li>
+				<li class="cart">
+					<a href="cart购物车.html">
+						<span></span>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li class="user">
+					<a href="user我的.html">
+						<span></span>
+						<p>我的</p>
+					</a>
+				</li>				
+			</ul>
+		</footer>
+		<!--固定的底部end-->
+	</body>
+
+<!--轮播begin-->
+<script type="text/javascript" src="../scripts/trundle.js"></script>
+<script type="text/javascript" src="../scripts/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.touchSlider.js"></script>
+<!--轮播end-->
+</html>

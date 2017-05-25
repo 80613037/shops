@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+    <link href="../styles/shopping_car.css" rel="stylesheet" />
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.11.2.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>	
+        <script src="../scripts/shopping_car.js"></script>
+<title>购物车</title>
+</head>
+<body> 
+    	<!--主体部分begin-->
+		<div class="wrap pad-bot" style="padding-bottom:2.7rem;">	
+            <header class="shopping_car_header">
+                <a href="javascript:void(0)">编辑</a>
+            </header>
+            <div class="shopping_car_list">
+                <div class="check"></div>
+                <a href="javascript:void(0)"  class="image1">
+                    <img src="../images/gwc_1sptp.png" /></a>
+                <div class="main">
+                    <a href="javascript:void(0)"  class="title">水果 山东烟台苹果水果 新鲜红富士苹果 脆甜5斤 打过包邮</a>
+                    <div class="price">￥1020</div>
+                    <div class="account"><span class="cut">-</span><small>1</small><span class="add">+</span></div>
+                </div>
+            </div>
+            <div class="shopping_car_list">
+                <div class="check"></div>
+                <a href="javascript:void(0)"  class="image1">
+                    <img src="../images/gwc_1sptp.png" /></a>
+                <div class="main">
+                    <a href="javascript:void(0)"  class="title">水果 山东烟台苹果水果 新鲜红富士苹果 脆甜5斤 打过包邮</a>
+                    <div class="price">￥1020</div>
+                    <div class="account"><span class="cut">-</span><small>1</small><span class="add">+</span></div>
+                </div>
+            </div>
+            <div class="shopping_car_list">
+                <div class="check"></div>
+                <a href="javascript:void(0)"  class="image1">
+                    <img src="../images/gwc_1sptp.png" /></a>
+                <div class="main">
+                    <a href="javascript:void(0)"  class="title">水果 山东烟台苹果水果 新鲜红富士苹果 脆甜5斤 打过包邮</a>
+                    <div class="price">￥1020</div>
+                    <div class="account"><span class="cut">-</span><small>1</small><span class="add">+</span></div>
+                </div>
+            </div>
+            <div class="shopping_car_list">
+                <div class="check"></div>
+                <a href="javascript:void(0)"  class="image1">
+                    <img src="../images/gwc_1sptp.png" /></a>
+                <div class="main">
+                    <a href="javascript:void(0)"  class="title">水果 山东烟台苹果水果 新鲜红富士苹果 脆甜5斤 打过包邮</a>
+                    <div class="price">￥1020</div>
+                    <div class="account"><span class="cut">-</span><small>1</small><span class="add">+</span></div>
+                </div>
+            </div>
+            <div class="shopping_car_list">
+                <div class="check"></div>
+                <a href="javascript:void(0)"  class="image1">
+                    <img src="../images/gwc_1sptp.png" /></a>
+                <div class="main">
+                    <a href="javascript:void(0)"  class="title">水果 山东烟台苹果水果 新鲜红富士苹果 脆甜5斤 打过包邮</a>
+                    <div class="price">￥1020</div>
+                    <div class="account"><span class="cut">-</span><small>1</small><span class="add">+</span></div>
+                </div>
+            </div>
+            <div class="shopping_car_list">
+                <div class="check"></div>
+                <a href="javascript:void(0)"  class="image1">
+                    <img src="../images/gwc_1sptp.png" /></a>
+                <div class="main">
+                    <a href="javascript:void(0)"  class="title">水果 山东烟台苹果水果 新鲜红富士苹果 脆甜5斤 打过包邮</a>
+                    <div class="price">￥1020</div>
+                    <div class="account"><span class="cut">-</span><small>1</small><span class="add">+</span></div>
+                </div>
+            </div>
+		</div>
+            <div class="shopping_car_footer">
+                <div class="check"></div>
+                <span class="checkall">全选</span>
+                <span class="money">去结算(1)</span>
+                <small class="price">
+                    总计：<span>￥1020</span>
+                    <small>（不含运费）</small>
+                </small>
+            </div>
+		<!--主体部分end-->
+  <!--固定的底部begin-->
+		<footer class="footer">
+			<ul>
+				<li class="index on">
+					<a href="index首页.html">
+						<span></span>
+						<p>首页</p>
+					</a>
+				</li>
+				<li class="mall">
+					<a href="mall商城.html">
+						<span></span>
+						<p>商城</p>
+					</a>
+				</li>
+				<li class="cart">
+					<a href="cart购物车.html">
+						<span></span>
+						<p>购物车</p>
+					</a>
+				</li>
+				<li class="user">
+					<a href="user我的.html">
+						<span></span>
+						<p>我的</p>
+					</a>
+				</li>				
+			</ul>
+		</footer>
+		<!--固定的底部end-->
+</body>
+</html>

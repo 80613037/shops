@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>商品详情</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot">
+			<!--广告位 建议上传图片（750*370）begin-->
+			<div class="ad-seckill table-wrap">
+				<img src="../images/sy_1banner_02.jpg">
+			</div>			
+			<!--广告位 建议上传图片（750*370）end-->	
+			<!--小迪云智能管家锁 begin-->
+			<div class="intelligent-part mar-bot">
+				<h3 class="zny">小迪云智能管家锁</h3>
+				<div class="circle-count-bar box-bar mar-bot">
+					<div class="support-num box-bar-list">
+						<div class="outer-circle">
+							<div class="inner-circle">
+								<span class="quantum">13568</span>
+							</div>
+						</div>
+						<div class="circle-inf">
+							支持人数
+						</div>
+					</div>
+					<div class="all-the-chips box-bar-list">
+						<div class="outer-circle outer-m-circle">
+							<span class="quantum">256%</span>
+							<p class="state">众筹中</p>
+						</div>						
+					</div>
+					<div class="support-num box-bar-list">
+						<div class="outer-circle">
+							<div class="inner-circle">
+								<span class="quantum">35<b>小时</b></span>
+							</div>
+						</div>
+						<div class="circle-inf">
+							剩余时间
+						</div>
+					</div>
+				</div>
+				<div class="amount-stat-panel mar-bot">
+					<ul class="box-bar">
+						<li class="box-bar-list">
+							<div class="num">￥<span>5000000</span></div>
+							<div class="ziinf">目标金额</div>
+						</li>
+						<li class="box-bar-list">
+							<div class="num">￥<span>12687115</span></div>
+							<div class="ziinf">已筹金额</div>
+						</li>
+					</ul>
+				</div>
+				<div class="wenzi-inf mar-bot">
+					为满足更多顾客对指纹锁产品更高的需求，的是曼特推出功能性更强、款型更靓、价格更合理的全新云智能锁，不仅满足顾客所需，更是未来在整个智能锁市场树立标杆。
+				</div>
+				<a href="#" class="see-dt mar-top">
+					查看项目详情>
+				</a>
+			</div>
+			<!--小迪云智能管家锁 end-->
+			<!--选择回报begin-->
+			<div class="repay-wrap mar-bot">
+				<div class="pepay-hd">
+					<h3>选择回报</h3>
+				</div>
+				<div class="pepay-bd">
+					<ul>
+						<!--一个循环begin-->
+						<li class="pepay-list">
+							<div class="pad10">
+								<div class="line box-bar">
+									<div class="support-l box-bar-list">
+										<div class="pri">支持：￥1399</div>
+										<div class="per"><b>680 </b>位支持者</div>
+									</div>
+									<div class="support-r cell">
+										<span class="single-rad"></span>
+									</div>
+								</div>
+								<div class="suppor-con">
+									【加推档位】感谢您对小滴云智能锁的支持，您将获得小滴云智能锁1台（全国包安装，偏远地区除外，180天只换不修）。
+								</div>
+								<div class="box-bar">
+									<div class="box-bar-list">
+										<div class="peis-l"></div>
+									</div>
+									<div class="cell">
+										<span class="zk-btn">展开</span>
+									</div>
+								</div>	
+								<div class="view-panel">
+									<img src="../images/sy_1banner_02.jpg" alt="">
+									<img src="../images/wd_40bg.jpg" alt="">
+								</div>								
+							</div>
+						</li>
+						<!--一个循环end-->						
+					</ul>
+				</div>
+			</div>
+			<!--选择回报end-->			
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="share foot-block1">
+					<i class="iconfont">&#xe605;</i>
+					<p>分享</p>
+				</div>
+				<div class="buynow supp foot-block1">我要支持</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->
+	</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>

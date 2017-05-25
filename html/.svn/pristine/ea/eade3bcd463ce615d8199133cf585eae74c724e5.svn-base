@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>订单详情</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">	
+		<link rel="stylesheet" href="../styles/coment.css">	
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-3.1.0.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap">	
+			<!--订单信息begin-->
+			<div class="order-inf box-bar bor-b">
+				<div class="item-pic cell" style="background-image: url(../images/sy_1banner_02.jpg);"></div>
+				<div class="item-con box-bar crowd-part box-bar-col">
+					<p class="mingzi">水果 山东烟台苹果水果 新鲜栖霞红富士苹果脆甜5斤 大果包邮</p>
+					<p class="shuliang corh">&nbsp;</p>
+					<p class="dingdan">订单编号：1235782455454</p>
+				</div>
+			</div>
+			<!--订单信息end-->
+			<div class="other-inf-part pad10 bgbai">
+				<div class="finll-form-bar box-bar">
+					<div class="order-pay cell widauto">档位金额：1元</div>
+				</div>
+				<div class="finll-form-bar box-bar">
+					<div class="order-pay cell widauto">支持数量：1</div>
+				</div>
+				<div class="finll-form-bar box-bar">
+					<div class="order-pay cell widauto">配送费用：免邮费</div>
+				</div>
+				<div class="finll-form-bar box-bar">
+					<div class="order-pay cell widauto">总计金额：1元 </div>
+				</div>				
+			</div>	
+			<div class="finll-form-bar dkj-panel pad-lr box-bar">
+				<div class="box-bar-list tex-l">
+					<span class="pad-r">抽奖编号</span>
+					<span>80000026</span>
+				</div>
+				<div class="kaij-part wzj cell"></div>
+			</div>	
+			<!--收货地址begin-->
+			<div class="pad10 bgbai">
+				<div class="line-bar box-bar dkj-panel mar-b0" onclick="window.location.href='#'">
+					<div class="position-icon"></div>
+					<div class="position-inf mar-r0">
+						<div class="per-inf">
+							<span class="name">收货人：于帅</span>
+						</div>
+						<div class="per-inf">
+							<span class="name">联系电话：15689652563</span>
+						</div>					
+						<div class="dt-addr">
+							收货地址：河北省石家庄市新华区天山大街与中山路交叉口御景花园13号楼2092室
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--收货地址end-->
+			<h3 class="hf-con pad-lr">回报内容</h3>
+			<div class="pad10 bgbai">
+				<div class="line-bar box-bar dkj-panel mar-b0">
+					<p>每满599位支持者抽取1位幸运用户，不满足时也抽取1位。幸运用户将会获得指纹锁一套。幸运用户将由凡品官方抽取。</p>
+				</div>
+			</div>			
+		</div>
+		<!--主体部分end-->			
+	</body>
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>

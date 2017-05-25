@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+		<title>商品详情</title>
+		<!--字体图标-->
+		<link rel="stylesheet" href="../styles/iconfont/iconfont.css">
+		<!--公共样式-->
+		<link rel="stylesheet" href="../styles/NormalizeFile.css">
+		<link rel="stylesheet" href="../styles/public.css">
+		<!--自定义样式-->
+		<link rel="stylesheet" href="../styles/style.css">
+		<!--轮播-->
+		<link rel="stylesheet" href="../styles/trundle.css">		
+		<!--jquery库有此轮播的需要引用低版本的库-->
+		<script src="../scripts/jquery-1.8.3.min.js"></script>	
+		<!--rem自适应-->
+		<script src="../scripts/flexible.js"></script>			
+	</head>
+  <style>
+
+    </style>	
+	<body>
+		<!--主体部分begin-->
+		<div class="wrap pad-bot">
+			<!--轮播begin 建议上传图片最佳比例2:1-->
+			<div class="main_visual">
+				<div class="flicking_con">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+				</div>
+				<div class="main_image">
+					<ul>
+						<li><span class="img_1"><img src="../images/sy_1banner_02.jpg"></span></li>
+						<li><span class="img_2"><img src="../images/sy_1banner_02.jpg"></span></li>
+						<li><span class="img_3"><img src="../images/sy_1banner_02.jpg"></span></li>
+					</ul>
+					<a href="javascript:;" id="btn_prev"></a>
+					<a href="javascript:;" id="btn_next"></a>
+				</div>
+			</div>			
+			<!--轮播end-->	
+			<!--产品信息begin-->
+			<div class="detail-panel">
+				<div class="detail-tit">
+					<h3>水果 山东烟台苹果水果 新鲜栖霞红富士苹果脆甜5斤 大果包邮 </h3>
+					<span class="dt-icon">自营</span>
+				</div>
+				<div class="detail-price box-bar">
+					<div class="dt-price box-bar-list">￥20.9</div>
+					<div class="dt-num box-bar-list">商品数量：1000</div>
+				</div>
+			</div>
+			<div class="detail-add-cart box-bar">
+				<div class="dt-hdnmu box-bar-list">数量</div>
+				<div class="dt-bdnum box-bar-list">
+					<div class="inner-dt-bdnum">
+		                <span class="reduce">-</span>
+		                <input class="count-input" type="text" value="1"/>
+		                <span class="add">+</span>
+		            </div>    
+				</div>
+			</div>
+			<!--产品信息end-->
+			<!--商品详情和商品评价begin-->
+			<div class="detail-main">
+				<div class="dt-hdtab">
+					<ul class="box-bar">
+						<li class="box-bar-list detail on">商品详情</li>
+						<li class="box-bar-list evaluate">商品评价</li>
+					</ul>
+				</div>
+				<div class="dt-bdtab">
+					<div class="dt-bdtab-inf table-wrap on">
+						<img src="../images/sy_1banner_02.jpg" alt="">
+					</div>
+					<div class="dt-bdtab-inf">
+						<ul class="evaluate-wrap">
+							<!--评价内容循环begin-->
+							<li class="dtcmc-li">
+								<div class="buyers-inf">
+									<!--建议头像上传正方形-->
+									<span class="head"><img src="../images/sy_1banner_02.jpg" alt=""></span>
+									<span class="name">您的昵称</span>
+									<span class="time">2016-10-26</span>
+								</div>
+								<div class="remark-inf">
+									收到的时候感觉真心不错，10斤苹果分2个的泡沫箱包装，每箱9个，每个个头差不多大
+								</div>
+								<div class="remark-img">
+									<img src="../images/sy_1banner_02.jpg" alt="">
+									<img src="../images/wd_40bg.jpg" alt="">
+								</div>
+							</li>
+							<!--评价内容循环end-->
+							<!--评价内容循环begin-->
+							<li class="dtcmc-li">
+								<div class="buyers-inf">
+									<!--建议头像上传正方形-->
+									<span class="head"><img src="../images/sy_1banner_02.jpg" alt=""></span>
+									<span class="name">您的昵称</span>
+									<span class="time">2016-10-26</span>
+								</div>
+								<div class="remark-inf">
+									收到的时候感觉真心不错，10斤苹果分2个的泡沫箱包装，每箱9个，每个个头差不多大
+								</div>
+								<div class="shopmanreply">
+									<span class="hd">店家回复：</span>
+									<span class="bd">谢谢您的支持！</span>
+								</div>
+							</li>
+							<!--评价内容循环end-->							
+						</ul>
+						<div class="loadmore">加载更多评价</div>
+					</div>					
+				</div>				
+			</div>
+			<!--商品详情和商品评价end-->
+		</div>
+		<!--主体部分end-->
+		<!--固定的底部begin-->
+		<footer class="footer">
+			<div class="detail-footer">
+				<div class="toshop foot-block1">
+					<i class="iconfont">&#xe607;</i>
+					<p>进店逛逛</p>
+				</div>
+				<div class="share foot-block1 eject-btn">
+					<i class="iconfont">&#xe605;</i>
+					<p>分享</p>
+				</div>
+				<div class="cart foot-block1">
+					<i class="iconfont">&#xe608;</i>
+					<p>购物车</p>
+				</div>
+				<div class="addcart foot-block2" onclick="func()">加入购物车</div>
+				<div class="buynow foot-block2">立即购买</div>
+			</div>
+		</footer>
+		<!--固定的底部end-->
+		<!--弹框begin-->
+		<div class="prompt-wrap eje-black-wrap">
+			<div class="share-inf-box">
+				<p class="invita dt-invita">点击右上角按钮，发送给朋友或朋友圈</p>
+			</div>
+			<div class="jt-nav"></div>
+		</div>
+		<!--弹框end-->		
+	</body>
+<!--轮播begin-->
+<script type="text/javascript" src="../scripts/trundle.js"></script>
+<script type="text/javascript" src="../scripts/jquery.event.drag-1.5.min.js"></script>
+<script type="text/javascript" src="../scripts/jquery.touchSlider.js"></script>
+<!--轮播end-->
+<!--首页模块自定义js-->
+<script type="text/javascript" src="../scripts/custom-index.js"></script>
+</html>
